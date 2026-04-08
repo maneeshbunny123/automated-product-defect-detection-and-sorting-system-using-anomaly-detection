@@ -86,7 +86,7 @@ if page == "Detection Home":
     st.title("🔍 Automated Product Defect Detection")
     st.write("Upload an image to detect product defects using AI.")
 
-    uploaded_file = st.file_file_uploader("Choose a product image...", type=["jpg", "jpeg", "png"])
+    uploaded_file = st.file_uploader("Choose a product image...", type=["jpg", "jpeg", "png"])
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
