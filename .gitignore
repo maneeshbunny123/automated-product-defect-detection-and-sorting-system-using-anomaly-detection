@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.env
+instance/
+defects.db
+static/uploads/
+static/results/
+runs/
+yolov8n.pt
+.vscode/
+temp_upload.jpg

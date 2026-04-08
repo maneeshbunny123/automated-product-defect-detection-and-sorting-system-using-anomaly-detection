@@ -1,0 +1,22 @@
+path: E:/My_Project/dataset
+train: E:/My_Project/dataset/images/train
+val: E:/My_Project/dataset/images/val
+test: E:/My_Project/dataset/images/test
+nc: 16  # Number of classes
+names:
+    0: broken_large
+    1: broken_small
+    2: contamination
+    3: bent_wire
+    4: cable_swap
+    5: combined
+    6: cut_inner_insulation
+    7: cut_outer_insulation
+    8: missing_cable
+    9: missing_wire
+    10: poke_insulation
+    11: defective
+    12: bent_lead
+    13: cut_lead
+    14: damaged_case
+    15: misplaced

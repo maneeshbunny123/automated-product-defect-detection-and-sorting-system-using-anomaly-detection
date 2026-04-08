@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automated Product Defect Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>🔍 Automated Product Defect Detection</h1>
+
+        <form method="POST" enctype="multipart/form-data">
+            <div class="file-box">
+                <input type="file" name="file" required>
+            </div>
+            <button class="btn">Upload & Detect</button>
+        </form>
+
+        {% if uploaded %}
+            <div class="result">
+                {% if message %}
+                    <p>{{ message }}</p>
+                {% endif %}
+                <img src="{{ result_image }}">
+            </div>
+        {% endif %}
+        <br>
+<a href="/dashboard" class="btn">📊 View Dashboard</a>
+
+    </div>
+</div>
+
+</body>
+</html>
